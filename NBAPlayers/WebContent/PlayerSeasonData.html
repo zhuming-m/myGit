@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="//b3.hoopchina.com.cn/common/common-v1.css" />
+		<script src="//b3.hoopchina.com.cn/web/module/dace/1.0.0/dace.js"></script>
+		<script src="//b3.hoopchina.com.cn/common/common-v1.js"></script>
+		<script src="//b3.hoopchina.com.cn/common/jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="//w2.hoopchina.com.cn/channel/gamespace/static/common/common_7253bb8.css" />
+		<link rel="stylesheet" type="text/css" href="//w3.hoopchina.com.cn/channel/gamespace/static/team/teamList/teamList_8718e34.css" />
+		<link rel="stylesheet" type="text/css" href="//w1.hoopchina.com.cn/channel/gamespace/static/common/widget/page-tab/page-tab_815858f.css" />
+		<style type="text/css">
+			
+			.players_table{
+				border: 1px solid bisque;
+				width: 980px;
+			}
+			tr td{
+				text-align: center;
+				border: 1px solid bisque;
+			}
+			.link{
+				
+				text-align: center;
+				height:200px"
+			}
+		</style>
+	</head>
+	<body>
+		<<div class="gamecenter_livestart">
+			<div class="adimg" style="text-align: center;">
+				<p style="text-align: center;"><img src="img/logo.jpeg" height="300px"></p>
+				<p style="text-align: center; height: 50px;">
+					<font face="arial rounded mt bold" size="6" color="cornflowerblue">This is why we play</font>
+				</p>
+
+			</div>
+			<div class="bgs_png" style="display:none;"></div>
+			<div class="hp-threeNav">
+				<div class="hp-threeNav-bd">
+					<ul class="hp-threeNav-item">
+						<li class=""><a href="index.html">首页</a></li>
+						<li class=""><a href="Player.html?team=" class="playerchange">球员</a></li>
+					</ul>
+				</div>
+				<div class="hp-search">
+					<form id="hp-form-search" method="get" enctype="multipart/form-data" action="//my.hoopchina.com/search">
+						<input type="text" value="搜索" class="it-search">
+						<input type="submit" value="搜索" class="btn-search">
+					</form>
+					<div id="hp-search-choose" class="hp-search-choose" style="display: none;"></div>
+				</div>
+			</div>
+			<div class="gamecenter_content">
+				<div class="players_right" style="margin-bottom:10px;">
+					<table class="players_table">
+						<tbody>
+							<tr class="title">
+								<td>赛季</td>
+								<td class="left">球队</td>
+								<td>场次</td>
+								<td>首发</td>
+								<td>时间</td>
+								<td>投篮</td>
+								<td>命中率</td>
+								<td>三分</td>
+								<td>命中率</td>
+								<td>罚球</td>
+								<td>命中率</td>
+								<td>篮板</td>
+								<td>助攻</td>
+								<td>抢断</td>
+								<td>盖帽</td>
+								<td>失误</td>
+								<td>犯规</td>
+								<td>得分</td>
+							</tr>
+						</tbody>
+					</table>
+					<br/>
+					<hr color="#0056B3" >
+				</div>
+				<div class=" link" >
+					<p>
+						<font size="4" color="#005CBF">友情链接</font>
+					</p>
+					<p>
+						<a href="https://china.nba.com/news/" target="_blank">
+							<font size="5" color="#005CBF">最新新闻</font>
+						</a>&nbsp;&nbsp;
+						<a href="https://china.nba.com/topics/history.htm" target="_blank">
+							<font size="5" color="#005CBF">NBA历史</font>
+						</a>&nbsp;&nbsp;
+						<a href="https://china.nba.com/topics/faq/index.htm">
+							<font size="5" color="#005CBF">NBA知识</font>
+						</a>&nbsp;&nbsp;
+					</p>
+					<br/>
+				</div>
+			</div>
+	</body>
+	<script src="js/jquery-3.4.1.js"></script>
+	<script src="js/getParameter.js"></script>
+	<script type="text/javascript">
+	
+	$(function(){
+		var playername=getParameter("playername");
+		playername=decodeURI(playername);
+		console.log(playername);
+		$.get("QueryPlayerSeasonDataByPlayername",{playername:playername},function(result){
+		$(result).each(function(index,element){
+	    var tr;
+	    tr='<td>'+element.season+'</td>'+'<td>'+element.team+'</td>'+'<td>'+element.games+'</td>'+
+	    '<td>'+element.gamestart+'</td>'+'<td>'+element.time+'</td>'+'<td>'+element.shot+'</td>'+
+	    '<td>'+element.hitrate+'</td>'+'<td>'+element.threeball+'</td>'+'<td>'+element.threehitrate+'</td>'+
+	    '<td>'+element.penaltyshot+'</td>'+'<td>'+element.penaltyhitrate+'</td>'+'<td>'+element.rebound+'</td>'+
+	    '<td>'+element.assist+'</td>'+'<td>'+element.steal+'</td>'+'<td>'+element.block+'</td>'+
+	    '<td>'+element.fault+'</td>'+'<td>'+element.foul+'</td>'+'<td>'+element.score+'</td>'
+	    $(".players_table tbody").append('<tr class="title">'+tr+'</tr>');	
+		})
+		},"json")
+		
+		
+		
+	})
+	$(".playerchange").click (function(){
+		    var team=getParameter("team");
+		    team=decodeURI(team);
+		    var msg=$(".playerchange").attr("href")
+		    msg=msg+team;
+			$(".playerchange").attr("href",msg);
+	})
+	
+	</script>
+</html>

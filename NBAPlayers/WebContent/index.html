@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="//b3.hoopchina.com.cn/common/common-v1.css" />
+		<script src="//b3.hoopchina.com.cn/web/module/dace/1.0.0/dace.js"></script>
+		<script src="//b3.hoopchina.com.cn/common/common-v1.js"></script>
+		<script src="//b3.hoopchina.com.cn/common/jquery.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="//w2.hoopchina.com.cn/channel/gamespace/static/common/common_7253bb8.css" />
+		<link rel="stylesheet" type="text/css" href="//w3.hoopchina.com.cn/channel/gamespace/static/team/teamList/teamList_8718e34.css" />
+		<link rel="stylesheet" type="text/css" href="//w1.hoopchina.com.cn/channel/gamespace/static/common/widget/page-tab/page-tab_815858f.css" />
+		<style type="text/css">
+			body,button,dd,div,dl,dt,form,h1,h2,h3,h4,h5,h6,html,iframe,input,li,ol,p,select,table,td,textarea,th,ul {
+				margin: 0;
+				padding: 0;
+			}
+			.pic-item {
+				width: 420px;
+				height: 300px;
+				float: left;
+				margin: 25px 25px 0 0;
+			}
+			.pic-item a {
+				display: block;
+				width: 100%;
+				height: 80%;
+				color: #fff;
+			}
+
+			.pic-item a img {
+				width: 100%;
+				height: 100%%;
+				border: none;
+			}
+
+			.pic-item a div {
+				height: 40px;
+				width: 340px;
+			}
+			.link{
+				
+				text-align: center;
+				height:200px"
+			}
+		</style>
+	</head>
+	<body>
+		<<div class="gamecenter_livestart">
+			<div class="adimg" style="text-align: center;">
+				<p style="text-align: center;"><img src="img/logo.jpeg" height="300px"></p>
+				<p style="text-align: center; height: 50px;">
+					<font face="arial rounded mt bold" size="6" color="cornflowerblue">This is why we play</font>
+				</p>
+
+			</div>
+			<div class="bgs_png" style="display:none;"></div>
+			<div class="hp-threeNav">
+				<div class="hp-threeNav-bd">
+					<ul class="hp-threeNav-item">
+						<li class=""><a href="https://nba.hupu.com/games">首页</a></li>
+						<li class=""><a href="Player.html?team=rockets">球员</a></li>
+					</ul>
+				</div>
+				<div class="hp-search">
+					<form id="hp-form-search" method="get" enctype="multipart/form-data" >
+						<input type="text" value="搜索" class="it-search">
+						<input type="submit" value="搜索" class="btn-search">
+					</form>
+					<div id="hp-search-choose" class="hp-search-choose" style="display: none;"></div>
+				</div>
+			</div>
+			<div class="gamecenter_content">
+				<div class="teamlist_box clearfix">
+					<div class="teamlist_box_l">西部</div>
+					<div class="teamlist_box_r">
+						<div class="all">
+							<div class="a"><span class="">西南赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=rockets"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/b72de688b7833a63.png"></div>
+										<div class="font">
+											<h2>火箭</h2>
+											<p>(53胜29负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=grizzlies"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/906d3cb1d084d39b.png"></div>
+										<div class="font">
+											<h2>灰熊</h2>
+											<p>(33胜49负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=pelicans"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/c5d7ee3d3999e1a3.png"></div>
+										<div class="font">
+											<h2>鹈鹕</h2>
+											<p>(33胜49负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=spurs"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/d61472f27405ef2f.png"></div>
+										<div class="font">
+											<h2>马刺</h2>
+											<p>(48胜34负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=mavericks"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/e27275cb4a9cf56f.png"></div>
+										<div class="font">
+											<h2>独行侠</h2>
+											<p>(33胜49负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="all">
+							<div class="a"><span class="">太平洋赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=clippers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/0d6670544d67158b.png"></div>
+										<div class="font">
+											<h2>快船</h2>
+											<p>(48胜34负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=lakers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/4f04d1b4f8a6548a.png"></div>
+										<div class="font">
+											<h2>湖人</h2>
+											<p>(37胜45负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=suns"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/0e9dc75130b041bb.png"></div>
+										<div class="font">
+											<h2>太阳</h2>
+											<p>(19胜63负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=warriors"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/e6d876b019135540.png"></div>
+										<div class="font">
+											<h2>勇士</h2>
+											<p>(57胜25负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=kings"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/54b9b9a860d5000d.png"></div>
+										<div class="font">
+											<h2>国王</h2>
+											<p>(39胜43负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="all">
+							<div class="a"><span class="">西北赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=blazers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/079f9b6b4be966c1.png"></div>
+										<div class="font">
+											<h2>开拓者</h2>
+											<p>(53胜29负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=timberwolves"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/171d8fbb81947872.png"></div>
+										<div class="font">
+											<h2>森林狼</h2>
+											<p>(36胜46负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=thunder"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/3d06df3d7207e41b.png"></div>
+										<div class="font">
+											<h2>雷霆</h2>
+											<p>(49胜33负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=jazz"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/42e1e1f96e72c9e7.png"></div>
+										<div class="font">
+											<h2>爵士</h2>
+											<p>(50胜32负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=nuggets"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/07eaaf35f02b3a43.png"></div>
+										<div class="font">
+											<h2>掘金</h2>
+											<p>(54胜28负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="teamlist_box clearfix">
+					<div class="teamlist_box_l">东部</div>
+					<div class="teamlist_box_r">
+						<div class="all">
+							<div class="a"><span class="">大西洋赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=celtics"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/58ad76e5013f88cd.png"></div>
+										<div class="font">
+											<h2>凯尔特人</h2>
+											<p>(49胜33负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=knicks"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/d1497fa2d3158da7.png"></div>
+										<div class="font">
+											<h2>尼克斯</h2>
+											<p>(17胜65负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=nets"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/8fb395595fe476f7.png"></div>
+										<div class="font">
+											<h2>篮网</h2>
+											<p>(42胜40负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=raptors"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/8143ce5275f35b64.png"></div>
+										<div class="font">
+											<h2>猛龙</h2>
+											<p>(58胜24负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=76ers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/b4f0980fef76de22.png"></div>
+										<div class="font">
+											<h2>76人</h2>
+											<p>(51胜31负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="all">
+							<div class="a"><span class="">东南赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=hawks"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/1c4b8d2d45a649b9.png"></div>
+										<div class="font">
+											<h2>老鹰</h2>
+											<p>(29胜53负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=heat"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/584ff80b87a21cd8.png"></div>
+										<div class="font">
+											<h2>热火</h2>
+											<p>(39胜43负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=hornets"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/30772edf038d248d.png"></div>
+										<div class="font">
+											<h2>黄蜂</h2>
+											<p>(39胜43负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=magic"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/6c8eb942322783b9.png"></div>
+										<div class="font">
+											<h2>魔术</h2>
+											<p>(42胜40负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=wizards"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/a76937b225c20218.png"></div>
+										<div class="font">
+											<h2>奇才</h2>
+											<p>(32胜50负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="all">
+							<div class="a"><span class="">中部赛区</span></div>
+							<div class="team">
+								<a href="Player.html?team=bucks"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/7091f8420b800878.png"></div>
+										<div class="font">
+											<h2>雄鹿</h2>
+											<p>(60胜22负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=bulls"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/0d490533faca1986.png"></div>
+										<div class="font">
+											<h2>公牛</h2>
+											<p>(22胜60负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=cavaliers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/b88b9d38a6685d3c.png"></div>
+										<div class="font">
+											<h2>骑士</h2>
+											<p>(19胜63负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=pistons"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/86e9f9cbf13706fb.png"></div>
+										<div class="font">
+											<h2>活塞</h2>
+											<p>(41胜41负)</p>
+										</div>
+									</div>
+								</a>
+								<a href="Player.html?team=pacers"  class="a_teamlink">
+									<div class="box">
+										<div class="img"><img src="https://gdc.hupucdn.com/gdc/nba/team/logo/83b033b5c036f590.png"></div>
+										<div class="font">
+											<h2>步行者</h2>
+											<p>(48胜34负)</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		   <div id="linkfilm" style="text-align: center; padding-left: 90px;">
+				<div>
+				    <p><font size="5" color="#0069D9">NBA故事会</font></p>
+					<hr color="#0056B3">
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第6期：NBA巨星抱团编年史（下）" href="http://v.sports.qq.com/#/page/e00311hvw71"><img
+							 src="//puui.qpic.cn/vpic/0/e00311hvw71.png/0" data-src="//puui.qpic.cn/vpic/0/e00311hvw71.png/0" alt="《NBA故事汇：长草期闲话》第6期：NBA巨星抱团编年史（下）">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第6期：NBA巨星抱团编年史（下)</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第5期：NBA巨星抱团编年史（中）" href="http://v.sports.qq.com/#/page/t00311p8es8"><img
+							 src="//puui.qpic.cn/vpic/0/t00311p8es8.png/0" data-src="//puui.qpic.cn/vpic/0/t00311p8es8.png/0" alt="《NBA故事汇：长草期闲话》第5期：NBA巨星抱团编年史（中）">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第5期：NBA巨星抱团编年史（中）</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第4期：NBA巨星抱团编年史（上）" href="http://v.sports.qq.com/#/page/b0031pbbuk0"><img
+							 src="//puui.qpic.cn/vpic/0/b0031pbbuk0.png/0" data-src="//puui.qpic.cn/vpic/0/b0031pbbuk0.png/0" alt="《NBA故事汇：长草期闲话》第4期：NBA巨星抱团编年史（上）">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第4期：NBA巨星抱团编年史（上）</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第3期：湖人的内线巨星打劫史(下)" href="http://v.sports.qq.com/#/page/e0031ed9ctl"><img
+							 src="//puui.qpic.cn/vpic/0/e0031ed9ctl.png/0" data-src="//puui.qpic.cn/vpic/0/e0031ed9ctl.png/0" alt="《NBA故事汇：长草期闲话》第3期：湖人的内线巨星打劫史(下)">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第3期：湖人的内线巨星打劫史(下)</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第2期：湖人的内线巨星打劫史(上)" href="http://v.sports.qq.com/#/page/a0031i3nq9l"><img
+							 src="//puui.qpic.cn/vpic/0/a0031i3nq9l.png/0" data-src="//puui.qpic.cn/vpic/0/a0031i3nq9l.png/0" alt="《NBA故事汇：长草期闲话》第2期：湖人的内线巨星打劫史(上)">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第2期：湖人的内线巨星打劫史(上)</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：长草期闲话》第1期：状元一半是水货？锡安能否打破“状元魔咒”" href="http://v.sports.qq.com/#/page/n00310vr421"><img
+							 src="//puui.qpic.cn/vpic/0/n00310vr421.png/0" data-src="//puui.qpic.cn/vpic/0/n00310vr421.png/0" alt="《NBA故事汇：长草期闲话》第1期：状元一半是水货？锡安能否打破“状元魔咒”">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：长草期闲话》第1期：状元一半是水货？锡安能否打破“状元魔咒”</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：三连冠传奇》第4期：谁能缔造下一个三连冠王朝？" href="http://v.sports.qq.com/#/page/i0031a8pcuf"><img
+							 src="//puui.qpic.cn/vpic/0/i0031a8pcuf.png/0" data-src="//puui.qpic.cn/vpic/0/i0031a8pcuf.png/0" alt="《NBA故事汇：三连冠传奇》第4期：谁能缔造下一个三连冠王朝？">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：三连冠传奇》第4期：谁能缔造下一个三连冠王朝?</font>
+						</div>
+					</div>
+					<div class="pic-item"><a target="_blank" title="《NBA故事汇：三连冠传奇》第3期：为何湖人之后再无三连冠？" href="http://v.sports.qq.com/#/page/i0031evjite"><img
+							 src="//puui.qpic.cn/vpic/0/i0031evjite.png/0" data-src="//puui.qpic.cn/vpic/0/i0031evjite.png/0" alt="《NBA故事汇：三连冠传奇》第3期：为何湖人之后再无三连冠？">
+						</a>
+						<div>
+							<font size="2" face="franklin gothic medium">《NBA故事汇：三连冠传奇》第3期：为何湖人之后再无三连冠？</font>
+						</div>
+					</div>
+				</div>
+				<hr color="#0056B3" >
+			</div>
+			 <div class=" link">
+					<p>
+						<font size="4" color="#005CBF">友情链接</font>
+					</p>
+					<p>
+						<a href="https://china.nba.com/news/" target="_blank">
+							<font size="5" color="#005CBF">最新新闻</font>
+						</a>&nbsp;&nbsp;
+						<a href="https://china.nba.com/topics/history.htm" target="_blank">
+							<font size="5" color="#005CBF">NBA历史</font>
+						</a>&nbsp;&nbsp;
+						<a href="https://china.nba.com/topics/faq/index.htm">
+							<font size="5" color="#005CBF">NBA知识</font>
+						</a>&nbsp;&nbsp;
+					</p>
+					<br/>
+				</div>
+			
+		</div>
+	</body>
+</html>
